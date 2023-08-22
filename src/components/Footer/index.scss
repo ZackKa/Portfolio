@@ -1,11 +1,8 @@
 footer{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     padding: 30px 0 15px 0;
-    background-color: black;
+    background-color: $color-principal;
     p{
         color: white;
     }

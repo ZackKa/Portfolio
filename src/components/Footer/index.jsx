@@ -1,10 +1,7 @@
-import FooterLogo from '../../assets/LOGOFooter.png'
-
 function Footer() {
     return(
-        <footer>
-            <img src={FooterLogo} alt="Logo" />
-            <p>© 2020 Kasa. All rights reserved</p>
+        <footer id="Footer">
+            <p>© 2023 Zakari K. All rights reserved</p>
         </footer>
     )
 }

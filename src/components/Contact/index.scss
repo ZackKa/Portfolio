@@ -1,0 +1,30 @@
+#Contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0 15px 0;
+    background-color: rgba(232, 225, 236, 0.199);
+    img{
+        width: 25%;
+        border-radius: 200px;
+        background: #cceeff;
+    }
+    .contact__corp{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        h2{
+            color: $color-principal;
+            font-size: 30px;
+        }
+        p, i, a{
+            font-size: 20px;
+            color: $color-principal;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}

@@ -16,9 +16,9 @@ function Logements() {
     }
     return (
         <>
-            <Header />
+            <Header lien5 = {"Acceuil"} lien6 = {"Contact"} />
             <main>
-                <Carousel collapseImg={logement.pictures}/>
+                {/* <Carousel collapseImg={logement.pictures}/> */}
                 <div className='corp'>
                     <div className='corp__contenue'>
                         <div className='corp__contenue__gauche'>
@@ -35,13 +35,20 @@ function Logements() {
                         </div> */}
                     </div>
                     <div className='corp__collapse'>
-                        <Collapse label="Mission">
+                        <Collapse label="Mission" type={logement.techno}>
                             <p>{logement.description}</p>
                         </Collapse>
-                        <Collapse label="Technologies utilisées" type={logement.techno}>
-                        </Collapse>
+                        {/* <Collapse label="Technologies utilisées" type={logement.techno}>
+                        </Collapse> */}
                     
                     </div>
+                </div>
+                <div className='pics'>
+                    {logement.pictures.map((picture, index) => (
+                    <div className="pics__img" key={index} id={logement.id + index}>
+                        <img src={picture} alt="photographie du logement" />
+                        </div>
+                        ))}
                 </div>
             </main>
             <Footer />

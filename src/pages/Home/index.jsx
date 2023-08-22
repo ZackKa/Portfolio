@@ -4,15 +4,17 @@ import Footer from '../../components/Footer'
 import Gallery from '../../components/Gallery'
 import Banniere from '../../components/Banniere'
 import About from '../../components/About'
+import Contact from '../../components/Contact'
 
 function Home() {
   return (
     <>
-      <Header />
+      <Header lien1 = {"A propos"} lien2 = {"Mes formations"} lien3 = {"Mes projets"} lien4 = {"Contacts"}/>
         <main>
           <Banniere cover = {ImageHome} />
           <About />
           <Gallery />
+          <Contact />
         </main>
       <Footer />
     </>
