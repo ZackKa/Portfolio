@@ -18,7 +18,9 @@ function Header(props) {
     return(
         <header id="Banniere">
             <div className={open ? "nav" : "nav__background"}>
-                <img src={HomeLogo} alt="Logo" />
+                <div className='div__img'>
+                    <img src={HomeLogo} alt="Logo" />
+                </div>
                 <nav>
                     {/* <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""} >Accueil</NavLink> */}
                     {/* <NavLink to="/About" className={({ isActive }) => isActive ? "active" : ""}>A propos</NavLink> */}

@@ -32,6 +32,13 @@ header{
                 }
             }
         }
+        .div__img{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            width: 11%;
+        }
     }
     img{
         width: 45px;
@@ -50,7 +57,9 @@ header{
         flex-wrap: nowrap;
         position: relative;
         right: 15px;
+        width: 89%;
         align-items: center;
+        justify-content: flex-end;
         @media (max-width: 767px){
             right: 0px;
             margin-right: 3px;
@@ -83,6 +92,5 @@ header{
         .active{
             display: none;
         }
-        
     }
 }
