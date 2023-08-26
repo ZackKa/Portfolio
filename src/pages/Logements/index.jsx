@@ -3,10 +3,9 @@ import Footer from '../../components/Footer'
 import Error from '../Error'
 import { useParams } from 'react-router-dom'
 import Collapse from '../../components/Collapse'
-import Star from '../../components/Star'
-import Carousel from '../../components/Carousel'
-import Tags from '../../components/Tags'
-import logementsList from "../../datas/logementsList";
+import logementsList from "../../datas/projetList";
+import { useEffect } from 'react'
+import Contact from '../../components/Contact'
 
 function Logements() {
     const { id } = useParams()
@@ -14,43 +13,42 @@ function Logements() {
     if (!logement) {
         return <Error />;
     }
+    function ScrollToTopOnMount() {
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []);
+      
+        return null;
+    }
     return (
         <>
+        <ScrollToTopOnMount />
             <Header lien5 = {"Acceuil"} lien6 = {"Contact"} />
             <main>
-                {/* <Carousel collapseImg={logement.pictures}/> */}
                 <div className='corp'>
                     <div className='corp__contenue'>
                         <div className='corp__contenue__gauche'>
-                            <h1>{logement.title}</h1>
-                            {/* <p>{logement.location}</p> */}
-                            {/* <Tags tags={logement.tags}/> */}
+                            <h1 id='projet_h1'>{logement.title}</h1>
                         </div>
-                        {/* <div className='corp__contenue__droit'>
-                            <div className='corp__contenue__droit__image'>
-                                <p>{logement.host.name}</p>
-                                <img src={logement.host.picture} alt="Portrait du propriétaire" />
-                            </div>
-                            <Star valeur={logement.rating}/>
-                        </div> */}
                     </div>
                     <div className='corp__collapse'>
                         <Collapse label="Mission" type={logement.techno}>
-                            <p>{logement.description}</p>
+                            <p><span>Description : </span>{logement.description}</p>
+                            <p><span>Problématique : </span>{logement.problematique}</p>
+                            <p><span>Compétences : </span>{logement.competences}</p>
+                            <p><a href={logement.lien} target="_blank" rel="noreferrer noopener"><span>Lien :</span>{logement.lien}</a></p>
                         </Collapse>
-                        {/* <Collapse label="Technologies utilisées" type={logement.techno}>
-                        </Collapse> */}
-                    
                     </div>
                 </div>
                 <div className='pics'>
                     {logement.pictures.map((picture, index) => (
                     <div className="pics__img" key={index} id={logement.id + index}>
                         <img src={picture} alt="photographie du logement" />
-                        </div>
-                        ))}
+                    </div>
+                    ))}
                 </div>
             </main>
+            <Contact />
             <Footer />
         </>
     )

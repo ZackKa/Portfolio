@@ -1,19 +1,13 @@
-// import { NavLink } from 'react-router-dom'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import HomeLogo from '../../assets/Memoji.png'
 import { useState, useEffect } from 'react'
 
 function Header(props) {
     const [open, setOpen] = useState(true);
 
-    // window.onscroll = () => {
-    //     if (window.scrollY > 580) {
-    //         setOpen(!open)
-    //     }
-    // };
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 535) {
+            if (window.scrollY > (props.scroll)) {
                 setOpen(false)
             } else {
                 setOpen(true);
@@ -22,19 +16,22 @@ function Header(props) {
     }, []);
     
     return(
-        <header >
+        <header id="Banniere">
             <div className={open ? "nav" : "nav__background"}>
                 <img src={HomeLogo} alt="Logo" />
                 <nav>
                     {/* <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""} >Accueil</NavLink> */}
                     {/* <NavLink to="/About" className={({ isActive }) => isActive ? "active" : ""}>A propos</NavLink> */}
-                    <a href="#A_propos" >{props.lien1}</a>
-                    <a href="#Formation">{props.lien2}</a>
-                    <a href="#Projet">{props.lien3}</a>
-                    <a href="#Contact">{props.lien4}</a>
-                    <Link to="/">{props.lien5}</Link>
-                    <a href='#Contact'>{props.lien6}</a>
-
+                    <div className='nav__acc'>
+                        <a href="#a_propos">{props.lien1}</a>
+                        <a href="#formation">{props.lien2}</a>
+                        <a href="#projet">{props.lien3}</a>
+                        <a href="#contact">{props.lien4}</a>
+                    </div>
+                    <div className='nav__projet'>
+                        <NavLink to="/">{props.lien5}</NavLink>
+                        <a href='#contact'>{props.lien6}</a>
+                    </div>
                 </nav>
             </div>
         </header>

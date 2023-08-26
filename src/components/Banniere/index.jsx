@@ -1,6 +1,6 @@
 function Banniere (props) {
     return(
-        <div className="banniere">
+        <section className="banniere">
 			{/* <div className="banniere__filtreOpacite"></div> */}
         	<div className="banniere__image">
 				<img src={props.cover} alt="Couverture de page" />
@@ -11,10 +11,10 @@ function Banniere (props) {
 				</h1>
 			</div>
 			<div className='banniere__planet1'>
-				<i class="fa-solid fa-earth-africa"></i>
+				<i className="fa-solid fa-earth-africa"></i>
 			</div>
 			<div className="banniere__planet2">
-				<i class="fa-solid fa-meteor"></i>
+				<i className="fa-solid fa-meteor"></i>
 			</div>
 			<div className='banniere__etoile1'></div>
 			<div className='banniere__etoile2'></div>
@@ -23,7 +23,7 @@ function Banniere (props) {
 			<div className='banniere__etoile5'></div>
 			<div className='banniere__etoile6'></div>
 			<div className='banniere__etoile7'></div>
-        </div>
+        </section>
     )
 }
 export default Banniere

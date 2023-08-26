@@ -10,7 +10,7 @@ function Collapse (props) {
     return(
         <div className='collapse'>
             <div className='collapse__header' onClick={Toggle}>
-                <h2><i class="fa-solid fa-clipboard"></i>{props.label}</h2>
+                <h2><i className="fa-solid fa-clipboard"></i>{props.label}</h2>
                 {open ? (
                             <i className="fa-solid fa-chevron-up chevron chevron__up"></i>
                     ) : (
@@ -30,7 +30,7 @@ function Collapse (props) {
 
             <div className={open ? "collapse__body" : "collapse__body__hidden"}>
             {props.children}
-            <h3>Technologies utilisées</h3>
+            <h3>Technologies/outils utilisés</h3>
             <ul>
                 {props.type.map((equipement, index) => (
                 <li key={`${index}`}>{equipement}</li>

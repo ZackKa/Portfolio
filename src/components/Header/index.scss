@@ -12,9 +12,6 @@ header{
         top: 0;
         justify-content: space-between;
         box-shadow: rgba(120, 120, 129, 0.1019607843) 0px 3px 3px 3px;
-        @media (max-width: 767px){
-            padding: 20px;
-        }
         &__background{
             color: white;
             padding: 6px 0px;
@@ -42,25 +39,38 @@ header{
         padding: 4px;
         margin-left: 15px;
         border-radius: 200px;
-        @media (max-width: 767px) {
-            width: 145px;
-            height: 46.88px;
-        }
     }
     nav{
         display: flex;
         flex-direction: row;
-        gap: 45px;
-        margin-right: 20px;
+        flex-wrap: nowrap;
+        position: relative;
+        right: 15px;
+        align-items: center;
+        .nav__acc{
+            display: flex;
+            gap: 45px;
+            @media (max-width: 767px){
+                gap: 10px;
+            }
+        }
+        .nav__projet{
+            display: flex;
+            gap: 45px;
+            position: absolute;
+            @media (max-width: 767px){
+                gap: 10px;
+                position: inherit;
+            }
+        }
         a{
-            // color: $color-primary;
             color: $color-principal;
             text-decoration: none;
             margin: 0 5px;
             font-weight: bold;
         }
         .active{
-            text-decoration: underline;
+            display: none;
         }
         
     }
