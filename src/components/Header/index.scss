@@ -51,7 +51,7 @@ header{
             display: flex;
             gap: 45px;
             @media (max-width: 767px){
-                gap: 10px;
+                gap: 0px;
             }
         }
         .nav__projet{
