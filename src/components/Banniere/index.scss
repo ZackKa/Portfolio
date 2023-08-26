@@ -7,6 +7,11 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 767px){
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
     &__filtreOpacite{
         background-color: black;
         opacity: 0.3;
@@ -25,7 +30,8 @@
         width: 50%;
         animation: float 5s ease-in-out infinite;
         @media (max-width: 767px){
-            left: 1%;
+            left: 0%;
+            width: auto;
         }
         img{
             max-height: 345px;
@@ -41,8 +47,11 @@
     }
     &__texte{
         width: 50%;
+        @media (max-width: 767px){
+            width: auto;
+        }
         @media (max-width: 992px){
-            width: 40%;
+            margin: 0px 15px;
         }
         h1{
             color: white;
@@ -62,6 +71,10 @@
         left: 35%;
         top: 20%;
         animation: spin 20s linear infinite;
+        @media (max-width: 767px){
+            left: 9%;
+            top: 23%;
+        }
         i{
             color: white;
             font-size: 75px;
@@ -75,6 +88,9 @@
         bottom: 15%;
         right: 18%;
         animation: shine 2500ms 600ms ease-in-out infinite, growth 4s linear infinite;
+        @media (max-width: 767px){
+            bottom: 11%;
+        }
         i{
             font-size: 100px;
             color: white;
@@ -124,6 +140,9 @@
         left: 49%;
         bottom: 23%;
         animation: shine 1800ms 600ms ease-in-out infinite;
+        @media (max-width: 767px){
+            bottom: 16%;
+        }
     }
     &__etoile5{
         width: 9px;
