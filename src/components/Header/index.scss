@@ -53,6 +53,7 @@ header{
         align-items: center;
         @media (max-width: 767px){
             right: 0px;
+            margin-right: 3px;
         }
         .nav__acc{
             display: flex;
