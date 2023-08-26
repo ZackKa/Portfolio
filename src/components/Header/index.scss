@@ -39,6 +39,9 @@ header{
         padding: 4px;
         margin-left: 15px;
         border-radius: 200px;
+        @media (max-width: 767px){
+            margin-left: 4px;
+        }
     }
     nav{
         display: flex;
@@ -47,6 +50,9 @@ header{
         position: relative;
         right: 15px;
         align-items: center;
+        @media (max-width: 767px){
+            right: 0px;
+        }
         .nav__acc{
             display: flex;
             gap: 45px;
@@ -68,6 +74,9 @@ header{
             text-decoration: none;
             margin: 0 5px;
             font-weight: bold;
+            @media (max-width: 767px){
+                margin: 0 3px;
+            }
         }
         .active{
             display: none;

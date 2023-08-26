@@ -24,6 +24,9 @@
         margin-top: 6%;
         width: 50%;
         animation: float 5s ease-in-out infinite;
+        @media (max-width: 767px){
+            left: 1%;
+        }
         img{
             max-height: 345px;
             background-color: whitesmoke;
