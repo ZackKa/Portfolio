@@ -6,10 +6,16 @@
     flex-wrap: wrap;
     background-color: #ffeeff;
     position: relative;
+    @media (max-width: 767px){
+        position: initial;
+    }
     #c67ab8a71{
         @media (max-width: 992px){
             position: absolute;
             right: 1%;
+        }
+        @media (max-width: 767px){
+            position: initial;
         }
     }
     #c67ab8a72{
@@ -17,35 +23,49 @@
         top: 26%;
         right: 1%;
         @media (max-width: 767px){
-            top: 29%;
+            position: initial;
         }
     }
     #a7f00cd61{
         position: absolute;
         right: 1%;
+        @media (max-width: 767px){
+            position: initial;
+        }
     }
     #a7f00cd62{
         position: absolute;
         top: 40%;
         right: 1%;
+        @media (max-width: 767px){
+            position: initial;
+        }
     }
     #a7f00cd63{
         position: absolute;
         right: 1%;
         top: 63%;
+        @media (max-width: 767px){
+            position: initial;
+        }
     }
     #a979876d2{
         margin-top: -10%;
+        @media (max-width: 767px){
+            margin-top: 7px;
+        }
     }
     #a6d188c50{
-        width: 80%;
-        margin-left: 11%;
+        width: 100%;
     }
     &__img{
         height: fit-content;
         margin: 7px 15px;
         box-shadow: 5px -13px 12px 2px #ffe9ff;
         width: 42%;
+        @media (max-width: 767px){
+            width: 100%;
+        }
         img{
             width: 100%;
         }
