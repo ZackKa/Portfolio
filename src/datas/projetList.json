@@ -4,9 +4,9 @@
 		"title": "Booki - Agence de voyages",
 		"cover": "http://zakari.manuso.fr/booki_couverture.png",
 		"pictures": [
-			"http://zakari.manuso.fr/booki_smartphone.png",
-			"http://zakari.manuso.fr/booki_desktop.png",
-			"http://zakari.manuso.fr/booki_tablette.png"
+			"http://zakari.manuso.fr/booki_smartphone_.png",
+			"http://zakari.manuso.fr/booki_desktop_.png",
+			"http://zakari.manuso.fr/booki_tablette_.png"
 		],
 		"description": "Projet d'étude dans le cadre de ma formation diplômante RNCP 2. Implémentation du front en HTML/CSS pour une agence de voyages fictive à partir d'une maquette. J'ai appris et utilisé la sémantique et les différentes balises Html.",
         "problematique": "Le souci que j'ai eu à gérer est sur la barre de recherche. Je devais mettre l'icône du lieu en bleu au  clic sur le champ recherche. Or, on ne peut pas appliquer un style sur un élément parent. J'ai dû faire une petite gymnastique pour inverser l'ordre des éléments dans le code mais les laisser dans le bon ordre visuel.",
@@ -20,12 +20,12 @@
 	{
 		"id": "b9123946",
 		"title": "Sophie Bluel - Architecte d'intérieur",
-		"cover": "http://zakari.manuso.fr/sophie_buel_couverture.PNG",
+		"cover": "http://zakari.manuso.fr/sophie_buel_couverture.jpg",
 		"pictures": [
-			"http://zakari.manuso.fr/sophie_buel_acceuil.png",
-			"http://zakari.manuso.fr/sophie_buel_connecter.png",
-			"http://zakari.manuso.fr/sohpie_buel_modal.PNG",
-			"http://zakari.manuso.fr/sophie_buel_login.html.png"
+			"http://zakari.manuso.fr/sophie_buel_acceuil_.png",
+			"http://zakari.manuso.fr/sophie_buel_connecter_.png",
+			"http://zakari.manuso.fr/sohpie_buel_modal_.PNG",
+			"http://zakari.manuso.fr/sophie_buel_login.html_.png"
 		],
 		"description": "Pour ce site d'architecte d'intérieur, j'ai implémenté le front de ce site en utilisant du HTML/Css ainsi que du Javascript. J'ai utilisé le JS principalement pour faire mes requêtes à l'api (GET, POST, PUT, DELETE). J'ai expérimenté l'utilisation de filtre mais aussi le status 'actif' qu'un élément peut avoir, notamment pour l'ouverture et la fermeture de modal. Et ainsi pouvoir afficher ces éléments selon certaines conditions.",
         "problematique": "Comment enregistrer le token renvoyer par la page de login et l'appliquer sur la page principal pour pouvoir ainsi modifier le contenue ? C'est la problématique que j'ai réglé grâce au window storage.",
@@ -40,7 +40,7 @@
 	{
 		"id": "a6d188c5",
 		"title": "Nina Carducci - Photographe",
-		"cover": "http://zakari.manuso.fr/nina_carducci_couverture.PNG",
+		"cover": "http://zakari.manuso.fr/nina_carducci_couverture.jpg",
 		"pictures": [
 			"http://zakari.manuso.fr/nina_carducci_.png"
 		],
@@ -57,12 +57,12 @@
 	{
 		"id": "a7f00cd6",
 		"title": "Kasa - Location d'appartements",
-		"cover": "http://zakari.manuso.fr/kasa_couverture.PNG",
+		"cover": "http://zakari.manuso.fr/kasa_couverture.jpg",
 		"pictures": [
-			"http://zakari.manuso.fr/kasa_acceuil.png",
-			"http://zakari.manuso.fr/kasa_a_propos.png",
-			"http://zakari.manuso.fr/kasa_error_404.png",
-			"http://zakari.manuso.fr/kasa_logement.png"
+			"http://zakari.manuso.fr/kasa_acceuil_.png",
+			"http://zakari.manuso.fr/kasa_a_propos_.png",
+			"http://zakari.manuso.fr/kasa_error_404_.png",
+			"http://zakari.manuso.fr/kasa_logement_.png"
 		],
 		"description": "Kasa est une application de location de bien immobilier dont j'ai fait la refonte en React. J'ai expérimenté les différents aspects de React comme les composants, les hooks (comme useState et useEffect) ou encore les propos. Grâce aux propos et aux hooks j'ai créé un collapse ainsi qu'un carrousel qui embellissent et ajoutent des fonctionnalités intéressantes à l'application.",
 		"problematique": "Le problème que j'ai eu à résoudre était pour la redirection sur la page erreur dans le cas où on entre une URL de page de logement non correspondante aux logements de l'application. J'ai résolu ce problème en comparant l'id dans l'URL et celui du logement, et ainsi renvoyer la page erreur quand ils ne se correspondent pas.",
@@ -76,12 +76,12 @@
 	{
 		"id": "a979876d",
 		"title": "Mon vieux grimoire - Notation de livres",
-		"cover": "http://zakari.manuso.fr/mon_vieux_grimoire_couverture.PNG",
+		"cover": "http://zakari.manuso.fr/mon_vieux_grimoire_couverture.jpg",
 		"pictures": [
-			"http://zakari.manuso.fr/mon_vieux_grimoire_acceuil.png",
-			"http://zakari.manuso.fr/mon_vieux_grimoire_ajout.png",
-			"http://zakari.manuso.fr/mon_vieux_grimoire_fiche_livre.png",
-			"http://zakari.manuso.fr/mon_vieux_grimoire_login.png"
+			"http://zakari.manuso.fr/mon_vieux_grimoire_acceuil_.png",
+			"http://zakari.manuso.fr/mon_vieux_grimoire_ajout_.png",
+			"http://zakari.manuso.fr/mon_vieux_grimoire_fiche_livre_.png",
+			"http://zakari.manuso.fr/mon_vieux_grimoire_login_.png"
 		],
 		"description": "Sur ce projet, j'ai abordé un aspect different de ce que j'ai déjà fait précédemment car je me suis attaqué au back-end d'un site de notation de livre. J'ai utilisé le Javascript dans un contexte different pour mettre en place des middlewares ainsi que des controllers. J'ai aussi augmenté la sécurité en utilisant des outils comme, une rate-limit, le Jwt et des variables d'environnement en passant par le cloisonnement de la base de données.",
 		"problematique": "Avec tous les hackers qui essayent de déjouer la sécurité sur les différents sites, je me suis demandé comment empêcher que des hackers ne trouvent les mots de passe utilisateurs. Sachant que beaucoup d'entre eux utilisent des dictionnaires pour tester des mots de passe à la suite. J'ai pour cela mis en place un rate-limit pour limiter le nombre de tentatives et mettre un timing avant de pouvoir tenter à nouveau la connexion.",

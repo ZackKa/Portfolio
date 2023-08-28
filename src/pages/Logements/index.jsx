@@ -43,7 +43,7 @@ function Logements() {
                 <div className='pics'>
                     {logement.pictures.map((picture, index) => (
                     <div className="pics__img" key={index} id={logement.id + index}>
-                        <img src={picture} alt="photographie du logement" />
+                        <img src={picture} alt="photographie du projet" />
                     </div>
                     ))}
                 </div>
