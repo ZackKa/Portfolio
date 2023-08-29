@@ -24,7 +24,7 @@
 		"pictures": [
 			"http://zakari.manuso.fr/sophie_buel_acceuil_.png",
 			"http://zakari.manuso.fr/sophie_buel_connecter_.png",
-			"http://zakari.manuso.fr/sohpie_buel_modal.jpg",
+			"http://zakari.manuso.fr/sohpie_buel_modal_.jpg",
 			"http://zakari.manuso.fr/sophie_buel_login.html_.png"
 		],
 		"description": "Pour ce site d'architecte d'intérieur, j'ai implémenté le front de ce site en utilisant du HTML/Css ainsi que du Javascript. J'ai utilisé le JS principalement pour faire mes requêtes à l'api (GET, POST, PUT, DELETE). J'ai expérimenté l'utilisation de filtre mais aussi le status 'actif' qu'un élément peut avoir, notamment pour l'ouverture et la fermeture de modal. Et ainsi pouvoir afficher ces éléments selon certaines conditions.",
