@@ -1,7 +1,6 @@
 function Banniere (props) {
     return(
         <section className="banniere">
-			{/* <div className="banniere__filtreOpacite"></div> */}
         	<div className="banniere__image">
 				<img src={props.cover} alt="Couverture de page" />
         	</div>

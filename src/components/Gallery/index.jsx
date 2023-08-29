@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import logementsList from "../../datas/projetList";
 import { useState } from 'react'
-// import Modal from '../Modal'
 
 
 function Gallery () {
@@ -10,9 +9,6 @@ function Gallery () {
 	function Toggle () {
         setOpen(!open);
     };
-	// const buttonClicked = (e) => {
-    //     e.stopPropagation()
-	// };
     return(
 		<section className='general__gallery' id="projet">
 			<h2> Mes projets</h2>
@@ -25,14 +21,6 @@ function Gallery () {
                 </Link>
             </div>
         	))}
-			{/* <div className={open ? "modal__body" : "modal__body__hidden"} onClick={Toggle}>
-				<div className='modal__body__content' onClick={ (e) => buttonClicked(e) }>
-					<button onClick={Toggle}><i class="fa-solid fa-xmark"></i></button>
-					<Modal />
-				</div>
-			</div> */}
-			
-			{/* {open ? "modal__body" : "modal__body__hidden"} */}
 			</div>
 		</section>
         

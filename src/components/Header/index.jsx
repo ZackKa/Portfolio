@@ -22,8 +22,6 @@ function Header(props) {
                     <img src={HomeLogo} alt="Logo" />
                 </div>
                 <nav>
-                    {/* <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""} >Accueil</NavLink> */}
-                    {/* <NavLink to="/About" className={({ isActive }) => isActive ? "active" : ""}>A propos</NavLink> */}
                     <div className='nav__acc'>
                         <a href="#a_propos">{props.lien1}</a>
                         <a href="#formation">{props.lien2}</a>
